@@ -78,7 +78,7 @@ def forward():
     
     motor2_GP21.value(1)
     motor2_GP20.value(0)
-    
+    print("forward")
 
 def backward():
     
@@ -87,14 +87,17 @@ def backward():
     
     motor2_GP21.value(0)
     motor2_GP20.value(1)
+    print("backward")
     
 def stop():
     
     motor1_GP18.value(0)
     motor1_GP19.value(0)
     
+    
     motor2_GP21.value(0)
     motor2_GP20.value(0)
+    print("stop")
     
 def left():
     
@@ -103,6 +106,7 @@ def left():
     
     motor2_GP21.value(0)
     motor2_GP20.value(1)
+    print("left")
 
 def right():
     
@@ -111,6 +115,7 @@ def right():
     
     motor2_GP21.value(1)
     motor2_GP20.value(0)
+    print("right")
     
 '''   
 forward()
